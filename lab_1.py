@@ -1,14 +1,12 @@
 import requests
 
+# VERSION OF REQUEST PACKAGE
 print(requests.__version__)
 
-r = requests.get('http://www.google.com')
+# GOOGLE MAIN PAGE
+response = requests.get('http://www.google.com')
+print(response.content)
 
-print(r.content)
-
-
-r = requests.get('GITHUB URL HERE')
-
-#PRINT CODE
-
-print(r.content)
+#PRINT SOURCE CODE
+response = requests.get('https://raw.githubusercontent.com/AnotherDayOfTrying/cmput404_lab_1/main/lab_1.py')
+print(response.content)

@@ -31,4 +31,4 @@ Populated form fields. Useful for analyzing any requests.
 
 Question 8: What is the raw URL to your Python script on GitHub?
 
-
+https://raw.githubusercontent.com/AnotherDayOfTrying/cmput404_lab_1/main/lab_1.py
