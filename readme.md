@@ -23,16 +23,18 @@ You must visit the URL `http://www.google.com/` to get a 200 status code. The UR
 
 ## Question 6: What status code is returned for http://google.com/teapot? Is it the one returned by curl -i or curl -iL? What happens when you curl http://www.google.com/teapot?
 
-Status Code http://google.com/teapot: 301 -> `-i` -> 301 -> `-iL` -> 418
-`-i` includes the headers in the response
+Status Code http://google.com/teapot: 301 -> `-i` -> 301 -> `-iL` -> 418  
+`-i` includes the headers in the response  
 `-iL` includes the headers and performs the redirection
 
-Status Code http://www.google.com/teapot: 418
+Status Code http://www.google.com/teapot: 418  
 Note: this is the same response given from the command curl -iL http://google.com/teapot as http://www.google.com/teapot is the location that curl redirects towards when using `-iL`
 
 ## Question 7: What changed in the output of https://webdocs.cs.ualberta.ca/~hindle1/1.py when you used -X POST? What is this method useful for?
 
-Populated form fields with the provided payload (X=Y). Included new headers `CONTENT_LENGTH`, `CONTENT_TYPE`. Shell Environment `REMOTE_PORT` (57012 -> 57048), `REQUEST_METHOD` ('GET' -> 'POST')
+Populated form fields with the provided payload (X=Y). Included new headers `CONTENT_LENGTH`, `CONTENT_TYPE`. Shell Environment `REMOTE_PORT` (57012 -> 57048), `REQUEST_METHOD` ('GET' -> 'POST')  
+`REMOTE_PORT` changes on each request and is not unique to a POST request
+
 Useful for analyzing any requests coming towards the endpoint.
 
 ## Question 8: What is the raw URL to your Python script on GitHub?
