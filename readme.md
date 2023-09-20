@@ -35,7 +35,7 @@ Note: this is the same response given from the command curl -iL http://google.co
 Populated form fields with the provided payload (X=Y). Included new headers `CONTENT_LENGTH`, `CONTENT_TYPE`. Shell Environment `REMOTE_PORT` (57012 -> 57048), `REQUEST_METHOD` ('GET' -> 'POST')  
 `REMOTE_PORT` changes on each request and is not unique to a POST request
 
-Useful for analyzing any requests coming towards the endpoint.
+POST methods are used to send information to an endpoint that runs a script, action, or program with the given input. `POST https://webdocs.cs.ualberta.ca/~hindle1/1.py` is useful for analyzing the content of any requests as it performs a script that writes out the contents of the request including headers, environment contexts, etc.
 
 ## Question 8: What is the raw URL to your Python script on GitHub?
 
